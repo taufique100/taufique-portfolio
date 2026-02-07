@@ -11,7 +11,7 @@ const navItems: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -38,7 +38,7 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="w-full flex justify-start pt-8 mb-16">
+    <header className="w-full flex justify-start pt-8 lg:mb-2 sm:mb-4">
       <nav className="relative w-full max-w-xl">
         {/* Top pill */}
         <div className="flex items-center justify-between rounded-2xl bg-[#1b1b1b] px-4 py-2 shadow-lg ring-1 ring-white/10">
