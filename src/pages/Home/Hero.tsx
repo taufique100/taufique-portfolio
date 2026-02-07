@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import TaufiqueAli from "../../assets/TaufiqueAliAvatar.jpg";
 import { Link } from "react-router-dom";
+import { FileTypeIcon } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -17,15 +18,14 @@ export default function Hero() {
           <div>
             <h1 className="text-2xl sm:text-5xl font-bold tracking-tight leading-[1.05]">
               Trust me, I'm a <span className="text-cyan-400">software</span>{" "}
-              {/* <br className="hidden sm:block" /> */}
               <span className="text-cyan-400">Engineer.</span>
             </h1>
 
             <p className="mt-8 max-w-xl text-white/60 leading-7">
-              Hi, I’m Taufique Ali — A software developer focused on
-              building scalable, end-to-end web applications. I work across the
-              full stack using React, TypeScript, Node.js, Express, and MongoDB, MySQL
-              to deliver secure, production-ready solutions with clean
+              Hi, I’m Taufique Ali — A software developer focused on building
+              scalable, end-to-end web applications. I work across the full
+              stack using React, TypeScript, Node.js, Express, and MongoDB,
+              MySQL to deliver secure, production-ready solutions with clean
               architecture, efficient APIs, and performance in mind.
             </p>
 
@@ -35,13 +35,12 @@ export default function Hero() {
               next-gen UI <span aria-hidden>✨</span>
             </p>
 
-            <a
-              href="#discord"
-              className="mt-6 inline-flex items-center gap-3 rounded-xl bg-indigo-600 px-6 py-3 font-semibold shadow-lg shadow-indigo-600/20 hover:bg-indigo-500 transition"
+            <span
+              className="inline-flex items-center gap-1 rounded-md  bg-rose-500/15 px-2 py-2 mt-3 text-xs font-semibold text-rose-400  border border-rose-400/30"
             >
-              <FaDiscord className="text-xl" />
-              Join Discord
-            </a>
+              <FileTypeIcon fontSize={16}/>
+              Download Resume
+            </span>
           </div>
 
           {/* Right */}

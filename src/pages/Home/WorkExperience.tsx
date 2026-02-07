@@ -64,7 +64,7 @@ export default function WorkExperience() {
   const active = experiences.find((x) => x.id === activeId)!;
 
   return (
-    <section className="w-full bg-black text-white">
+    <section id="experience" className="w-full bg-black text-white">
       <div className="mx-auto max-w-6xl sm:px-2 pb-14 pt-6">
         <h2 className="text-4xl font-bold tracking-tight">Work Experience</h2>
         <p className="mt-3 text-white/60">

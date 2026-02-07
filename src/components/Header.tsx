@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import TaufiqueAliAvatar from '../assets/TaufiqueAliAvatar.jpg'
+import TaufiqueAliAvatar from '@/assets/TaufiqueAliAvatar.jpg'
 import { Link } from "react-router-dom";
 
 type NavItem = {
@@ -8,9 +8,9 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
+  { label: "About", href: "/about-me" },
+  { label: "Projects", href: "/projects" },
+  { label: "Experience", href: "/experience" },
   { label: "Contact", href: "/contact" },
 ];
 
