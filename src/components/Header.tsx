@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import TaufiqueAliAvatar from '@/assets/TaufiqueAliProfileImage.jpeg'
+import TaufiqueAliAvatar from "@/assets/TaufiqueAliProfileImage.jpeg";
 import { Link } from "react-router-dom";
 
 type NavItem = {
@@ -41,11 +41,13 @@ export default function Header() {
       <nav className="relative w-full max-w-xl">
         {/* Top pill */}
         <div className="flex items-center justify-between rounded-2xl bg-[#1b1b1b] px-4 py-2 shadow-lg ring-1 ring-white/15">
-          {/* Left: Avatar + Name */}
           <Link to="/" className="flex items-center gap-3 min-w-0">
             <div className="h-10 w-10 rounded-full bg-white/10 ring-2 ring-white/15 flex items-center justify-center text-white text-sm font-semibold">
-              {/* {initials} */}
-              <img src={TaufiqueAliAvatar} className="rounded-3xl w-full h-full" alt="Taufique Ali Avatar" />
+              <img
+                src={TaufiqueAliAvatar}
+                className="rounded-3xl w-full h-full"
+                alt="Taufique Ali Avatar"
+              />
             </div>
             <span className="text-white font-semibold tracking-wide truncate">
               Taufique Ali
@@ -86,13 +88,27 @@ export default function Header() {
         {/* Mobile Menu */}
         <div
           className={`fixed left-1/2 top-6 z-50 w-[92vw] max-w-md -translate-x-1/2 transition-all duration-300 ${
-            open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+            open
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-4 pointer-events-none"
           }`}
         >
           <div className="rounded-3xl bg-[#141414] ring-1 ring-white/10 shadow-2xl overflow-hidden">
             {/* Header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
-              <span className="text-white font-semibold">Menu</span>
+              <Link to="/" className="flex items-center gap-3 min-w-0">
+                <div className="h-10 w-10 rounded-full bg-white/10 ring-2 ring-white/15 flex items-center justify-center text-white text-sm font-semibold">
+                  {/* {initials} */}
+                  <img
+                    src={TaufiqueAliAvatar}
+                    className="rounded-3xl w-full h-full"
+                    alt="Taufique Ali Avatar"
+                  />
+                </div>
+                <span className="text-white font-semibold tracking-wide truncate">
+                  Taufique Ali
+                </span>
+              </Link>
               <button
                 onClick={() => setOpen(false)}
                 className="h-9 w-9 text-white rounded-full hover:bg-white/10 transition"
