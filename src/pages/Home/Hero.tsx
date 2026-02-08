@@ -24,21 +24,14 @@ export default function Hero() {
             <p className="mt-8 max-w-xl text-white/60 leading-7">
               Hi, I’m Taufique Ali — A software developer focused on building
               scalable, end-to-end web applications. I work across the full
-              stack using React, TypeScript, Node.js, Express, and MongoDB,
-              MySQL to deliver secure, production-ready solutions with clean
-              architecture, efficient APIs, and performance in mind.
+              stack using React, Javascript, NextJs, TypeScript, Node.js,
+              Express, and MongoDB, MySQL to deliver secure, production-ready
+              solutions with clean architecture, efficient APIs, and performance
+              in mind.
             </p>
 
-            <p className="mt-6 text-white/70">
-              Building{" "}
-              <span className="font-semibold text-white">Awesome Products</span>{" "}
-              next-gen UI <span aria-hidden>✨</span>
-            </p>
-
-            <span
-              className="inline-flex items-center gap-1 rounded-md  bg-rose-500/15 px-2 py-2 mt-3 text-xs font-semibold text-rose-400  border border-rose-400/30"
-            >
-              <FileTypeIcon fontSize={16}/>
+            <span className="inline-flex items-center gap-1 rounded-md  bg-rose-500/15 px-2 py-2 mt-3 text-xs font-semibold text-rose-400  border border-rose-400/30">
+              <FileTypeIcon fontSize={16} />
               Download Resume
             </span>
           </div>

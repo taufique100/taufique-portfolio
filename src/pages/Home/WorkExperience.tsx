@@ -64,98 +64,104 @@ export default function WorkExperience() {
   const active = experiences.find((x) => x.id === activeId)!;
 
   return (
-    <section id="experience" className="w-full bg-black text-white">
-      <div className="mx-auto max-w-6xl sm:px-2 pb-14 pt-6">
-        <h2 className="text-4xl font-bold tracking-tight">Work Experience</h2>
-        <p className="mt-3 text-white/60">
-          I switch a lot of companies. It&apos;s mostly about the culture.
+    <>
+      <div className="mb-3 border-l-4 border-cyan-500 pl-4">
+        <p className="text-lg italic text-white/80 leading-relaxed">
+          “Good software is built by understanding the problem deeply — not by
+          adding complexity.”
         </p>
+        <span className="mt-2 block text-sm text-white/50">
+          — Inspired by Anders Hejlsberg
+        </span>
+      </div>
+      <section id="experience" className="w-full bg-black text-white">
+        <div className="mx-auto max-w-6xl sm:px-2 pb-14 pt-6">
+          <h2 className="text-4xl font-bold tracking-tight">Work Experience</h2>
+          <p className="mt-3 text-white/60">
+            I switch a lot of companies. It&apos;s mostly about the culture.
+          </p>
 
-        <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-12">
-          {/* Left selector */}
-          <div className="lg:col-span-4">
-            <div className="relative pl-6">
-              {/* vertical line */}
-              <div className="absolute left-2 top-2 h-[calc(100%-8px)] w-px bg-white/10" />
+          <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-12">
+            <div className="lg:col-span-4">
+              <div className="relative pl-6">
+                <div className="absolute left-2 top-2 h-[calc(100%-8px)] w-px bg-white/10" />
 
-              <div className="space-y-5">
-                {experiences.map((item) => {
-                  const isActive = item.id === activeId;
-                  return (
-                    <button
-                      key={item.id}
-                      onClick={() => setActiveId(item.id)}
-                      className={[
-                        "group w-full text-left flex items-center gap-3 rounded-xl px-4 py-3",
-                        "transition border",
-                        isActive
-                          ? "bg-white/5 border-white/10"
-                          : "bg-transparent border-transparent hover:bg-white/5 hover:border-white/10",
-                      ].join(" ")}
-                    >
-                      {/* small circle marker on the line */}
-                      <span className="absolute left-[3px]">
-                        <span
-                          className={[
-                            "block h-2.5 w-2.5 rounded-full",
-                            isActive
-                              ? "bg-cyan-400"
-                              : "bg-white/20 group-hover:bg-white/30",
-                          ].join(" ")}
-                        />
-                      </span>
-
-                      {/* badge */}
-                      <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/5 border border-white/10">
-                        <span className="text-sm font-semibold text-white/70">
-                          {item.badgeText ?? "•"}
+                <div className="space-y-5">
+                  {experiences.map((item) => {
+                    const isActive = item.id === activeId;
+                    return (
+                      <button
+                        key={item.id}
+                        onClick={() => setActiveId(item.id)}
+                        className={[
+                          "group w-full text-left flex items-center gap-3 rounded-xl px-4 py-3",
+                          "transition border",
+                          isActive
+                            ? "bg-white/5 border-white/10"
+                            : "bg-transparent border-transparent hover:bg-white/5 hover:border-white/10",
+                        ].join(" ")}
+                      >
+                        <span className="absolute left-[3px]">
+                          <span
+                            className={[
+                              "block h-2.5 w-2.5 rounded-full",
+                              isActive
+                                ? "bg-cyan-400"
+                                : "bg-white/20 group-hover:bg-white/30",
+                            ].join(" ")}
+                          />
                         </span>
-                      </span>
+                        <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/5 border border-white/10">
+                          <span className="text-sm font-semibold text-white/70">
+                            {item.badgeText ?? "•"}
+                          </span>
+                        </span>
 
-                      <div className="min-w-0">
-                        <p className="truncate text-lg font-medium text-white/80">
-                          {item.company}
-                        </p>
-                      </div>
-                    </button>
-                  );
-                })}
+                        <div className="min-w-0">
+                          <p className="truncate text-lg font-medium text-white/80">
+                            {item.company}
+                          </p>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Right details */}
-          <div className="lg:col-span-8">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-7">
-              <h3 className="text-2xl sm:text-3xl font-bold">
-                {active.role}{" "}
-                <span className="text-cyan-400">@{active.company}</span>
-              </h3>
+            {/* Right details */}
+            <div className="lg:col-span-8">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-7">
+                <h3 className="text-2xl sm:text-3xl font-bold">
+                  {active.role}{" "}
+                  <span className="text-cyan-400">@{active.company}</span>
+                </h3>
 
-              <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-white/60">
-                <span className="text-sm tracking-wide">{active.period}</span>
-                <span className="text-white/30">•</span>
-                <span className="text-sm">{active.location}</span>
+                <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-white/60">
+                  <span className="text-sm tracking-wide">{active.period}</span>
+                  <span className="text-white/30">•</span>
+                  <span className="text-sm">{active.location}</span>
+                </div>
+
+                <ul className="mt-6 space-y-3">
+                  {active.highlights.map((text, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-start gap-3 text-white/80"
+                    >
+                      <Check className="mt-0.5 h-5 w-5 text-cyan-400" />
+                      <span>{text}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* optional: subtle glow */}
+                <div className="pointer-events-none mt-8 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
               </div>
-
-              <ul className="mt-6 space-y-3">
-                {active.highlights.map((text, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-start gap-3 text-white/80"
-                  >
-                    <Check className="mt-0.5 h-5 w-5 text-cyan-400" />
-                    <span>{text}</span>
-                  </li>
-                ))}
-              </ul>
-
-              {/* optional: subtle glow */}
-              <div className="pointer-events-none mt-8 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
