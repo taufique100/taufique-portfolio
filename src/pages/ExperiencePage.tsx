@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from "react";
-import { experiences, type Experience } from "@/data/experienceData";
+import { useMemo, useState } from "react";
+import { experiences } from "@/data/experienceData";
 import { Briefcase } from "lucide-react";
 import { BulletPoint } from "@/components/BulletPoint";
 import SEO from "@/components/SEO";
@@ -18,7 +18,7 @@ export default function ExperiencePage() {
         title="Experience - Taufique Ali | Software Developer Work History"
         description="2+ years of professional experience as Full Stack Developer at ItDose Infosystem and Speqto Technologies. Expertise in React.js, Node.js, TypeScript, MongoDB, REST APIs, and enterprise application development."
         keywords="software developer experience, full stack developer work history, react developer experience, nodejs developer experience, mern stack experience, professional developer portfolio"
-        canonical="https://taufiqueali.dev1.com/experience"
+        canonical="https://taufiqueali.dev1.cloud/experience"
       />
       <section id="experience" className="min-h-screen bg-black text-white">
       <div className="mx-auto max-w-6xl px-4 py-16">

@@ -11,7 +11,7 @@ export default function SEO({
   title = "Taufique Ali - Full Stack Developer | React, Node.js, TypeScript Expert",
   description = "Experienced Full Stack Developer specializing in React.js, Next.js, Angular, Node.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS. Frontend & Backend Developer with expertise in MERN Stack, REST APIs, MongoDB, Express.js",
   keywords = "frontend developer, backend developer, full stack developer, react developer, reactjs developer, nextjs developer, angular developer, javascript developer, typescript developer, nodejs developer, mern stack developer, html developer, css developer, tailwind css developer, web developer, software developer",
-  canonical = "https://taufiqueali.dev1.com/"
+  canonical = "https://taufiqueali.dev1.cloud/"
 }: SEOProps) {
   
   useEffect(() => {

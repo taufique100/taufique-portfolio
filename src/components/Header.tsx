@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import TaufiqueAliAvatar from '@/assets/TaufiqueAliProfileImage.jpeg'
 import { Link } from "react-router-dom";
 
@@ -16,7 +16,6 @@ const navItems: NavItem[] = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const initials = useMemo(() => "TA", []);
 
   // Close on ESC
   useEffect(() => {

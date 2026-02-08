@@ -19,7 +19,7 @@ export default function ProjectsPage() {
         title="Projects - Taufique Ali | React, Node.js, MERN Stack Projects"
         description="Explore my portfolio of full-stack projects built with React.js, Next.js, Node.js, MongoDB, Express.js, TypeScript. Real-world applications including LIMS, healthcare systems, and enterprise solutions."
         keywords="react projects, nodejs projects, mern stack projects, full stack projects, javascript projects, typescript projects, nextjs projects, mongodb projects, rest api projects, web development portfolio, software developer projects"
-        canonical="https://taufiqueali.dev1.com/projects"
+        canonical="https://taufiqueali.dev1.cloud/projects"
       />
       <section id="projects" className="min-h-screen bg-black text-white">
       <div className="mx-auto max-w-6xl px-4 py-16">
