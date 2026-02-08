@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { projects, type Project } from "@/data/projectsData";
 import { ExternalLink, Github, ChevronDown, ChevronUp } from "lucide-react";
 import { BulletPoint } from "@/components/BulletPoint";
+import { Link } from "react-router-dom";
 
 export default function ProjectsPage() {
   const [activeProjectId, setActiveProjectId] = useState(projects[0]?.id);
@@ -79,7 +80,7 @@ function ProjectViewer({ project }: { project: Project }) {
 
       {/* Thumbnails */}
       <div className="border-t border-white/10 bg-black/60 backdrop-blur-sm">
-        <div className="flex gap-2 overflow-x-auto px-4 py-3 scrollbar-thin">
+        <div className="flex gap-2 overflow-x-auto px-4 py-3 scrollbar-thin themed-scrollbar">
           {project.images.map((img, idx) => {
             const isActive = img === activeImage;
             return (
@@ -121,14 +122,14 @@ function ProjectViewer({ project }: { project: Project }) {
           {/* Links */}
           <div className="flex gap-3 flex-wrap">
             {project.liveUrl ? (
-              <a
-                href={project.liveUrl}
+              <Link
+                to={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/20 border border-cyan-400/40 px-5 py-2.5 text-sm font-medium text-cyan-200 hover:bg-cyan-500/30 transition-all shadow-lg shadow-cyan-500/20"
               >
                 Live <ExternalLink className="h-4 w-4" />
-              </a>
+              </Link>
             ) : (
               <span className="inline-flex items-center rounded-xl border border-white/10 bg-black/40 px-5 py-2.5 text-sm text-white/50">
                 Live (private)
@@ -136,14 +137,14 @@ function ProjectViewer({ project }: { project: Project }) {
             )}
 
             {project.githubUrl ? (
-              <a
-                href={project.githubUrl}
+              <Link
+                to={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 hover:border-white/20 transition-all"
               >
                 Code <Github className="h-4 w-4" />
-              </a>
+              </Link>
             ) : (
               <span className="inline-flex items-center rounded-xl border border-white/10 bg-black/40 px-5 py-2.5 text-sm text-white/50">
                 Code (private)

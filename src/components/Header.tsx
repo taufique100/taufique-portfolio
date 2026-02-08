@@ -43,7 +43,7 @@ export default function Header() {
         {/* Top pill */}
         <div className="flex items-center justify-between rounded-2xl bg-[#1b1b1b] px-4 py-2 shadow-lg ring-1 ring-white/10">
           {/* Left: Avatar + Name */}
-          <a href="/" className="flex items-center gap-3 min-w-0">
+          <Link to="/" className="flex items-center gap-3 min-w-0">
             <div className="h-10 w-10 rounded-full bg-white/10 ring-2 ring-white/10 flex items-center justify-center text-white text-sm font-semibold">
               {/* {initials} */}
               <img src={TaufiqueAliAvatar} className="rounded-3xl w-full h-full" alt="Taufique Ali Avatar" />
@@ -51,7 +51,7 @@ export default function Header() {
             <span className="text-white font-semibold tracking-wide truncate">
               Taufique Ali
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden sm:flex items-center gap-8">
@@ -105,9 +105,9 @@ export default function Header() {
             {/* Links */}
             <div className="p-3 grid gap-2">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-between rounded-2xl px-4 py-3 bg-white/5 hover:bg-white/10 transition"
                 >
@@ -115,7 +115,7 @@ export default function Header() {
                     {item.label}
                   </span>
                   <span className="text-white/50">→</span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

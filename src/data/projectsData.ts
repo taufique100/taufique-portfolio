@@ -1,3 +1,22 @@
+import Qvani1 from '@/assets/Qvani/Qvani1.png'
+import Qvani2 from '@/assets/Qvani/Qvani2.png'
+import Qvani3 from '@/assets/Qvani/Qvani3.png'
+import Qvani4 from '@/assets/Qvani/Qvani4.png'
+
+import Kaamwala1 from '@/assets/Qvani/Kaamwala1.png'
+import Kaamwala2 from '@/assets/Qvani/kaamwala2.png'
+import Kaamwala3 from '@/assets/Qvani/Kaamwala3.png'
+import Kaamwala4 from '@/assets/Qvani/Kaamwala4.png'
+
+import Lims1 from '@/assets/LIMS/image1.png'
+import Lims2 from '@/assets/LIMS/image2.png'
+import Lims3 from '@/assets/LIMS/image3.png'
+import Lims4 from '@/assets/LIMS/image4.png'
+import Lims5 from '@/assets/LIMS/image5.png'
+import Lims6 from '@/assets/LIMS/image6.png'
+import Lims7 from '@/assets/LIMS/image7.png'
+import Lims8 from '@/assets/LIMS/image8.png'
+
 export type Project = {
   id: string;
   title: string;
@@ -34,11 +53,7 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://lis9.ldpldiagnostics.in/login",
     githubUrl: "",
-    images: [
-      "https://placehold.co/1600x900/0b0b0b/22d3ee?text=INNOPATH+Dashboard",
-      "https://placehold.co/1600x900/0b0b0b/22d3ee?text=INNOPATH+Billing",
-      "https://placehold.co/1600x900/0b0b0b/22d3ee?text=INNOPATH+Reports",
-    ],
+    images: [Lims1, Lims2, Lims3, Lims4, Lims5, Lims6, Lims7, Lims8],
   },
   {
     id: "qvani",
@@ -62,11 +77,7 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://qvani.com/",
     githubUrl: "",
-    images: [
-      "https://placehold.co/1600x900/0b0b0b/22d3ee?text=QVANI+Wallet",
-      "https://placehold.co/1600x900/0b0b0b/22d3ee?text=QVANI+Swap",
-      "https://placehold.co/1600x900/0b0b0b/22d3ee?text=QVANI+Transactions",
-    ],
+    images: [Qvani1, Qvani2, Qvani3, Qvani4],
   },
   {
     id: "kaamvala",
@@ -91,12 +102,8 @@ export const projects: Project[] = [
       "JWT",
       "Firebase",
     ],
-    liveUrl: "",
+    liveUrl: "https://kaamvala.com/",
     githubUrl: "",
-    images: [
-      "https://placehold.co/1600x900?text=Kaamvala+Dashboard",
-      "https://placehold.co/1600x900?text=Kaamvala+Jobs",
-      "https://placehold.co/1600x900?text=Kaamvala+Applications",
-    ],
+    images: [Kaamwala1, Kaamwala2, Kaamwala3, Kaamwala4],
   },
 ];

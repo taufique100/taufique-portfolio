@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Firefox */
+.themed-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #513939 transparent;
+}
+
+.themed-scrollbar::-webkit-scrollbar {
+  height: 8px; 
+  width: 8px;  
+}
+
+.themed-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.themed-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    #6366f1,
+    #8b5cf6
+  );
+  border-radius: 999px;
+}
+
+.themed-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    90deg,
+    #4f46e5,
+    #7c3aed
+  );
+}
