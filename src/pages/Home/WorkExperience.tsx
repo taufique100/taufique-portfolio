@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Check, Dot } from "lucide-react";
+import { Check } from "lucide-react";
 import SpeqtoLogo from "@/assets/speqtoLogo.png";
 
 type Experience = {
