@@ -1,11 +1,19 @@
 import { MapPin, Briefcase, Code2 } from "lucide-react";
 import { BulletPoint } from "@/components/BulletPoint";
 import TaufiqueAliAvatar from '@/assets/TaufiqueAliAvatar.jpg'
+import SEO from "@/components/SEO";
 
 export default function AboutPage() {
   
   return (
-    <section id="about" className="min-h-screen bg-black text-white">
+    <>
+      <SEO 
+        title="About - Taufique Ali | Full Stack MERN Developer"
+        description="Learn about Taufique Ali, a Full Stack Developer with 2+ years of experience in React.js, Node.js, TypeScript, MongoDB, Express.js. Specialized in building scalable web applications and REST APIs."
+        keywords="about full stack developer, mern stack developer, react developer profile, nodejs developer profile, software engineer, web developer bio, taufique ali developer"
+        canonical="https://taufiqueali.dev1.com/about-me"
+      />
+      <section id="about" className="min-h-screen bg-black text-white">
       <div className="mx-auto max-w-6xl px-4 py-16">
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -108,5 +116,6 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

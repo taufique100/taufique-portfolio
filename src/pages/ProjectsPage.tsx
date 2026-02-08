@@ -3,6 +3,7 @@ import { projects, type Project } from "@/data/projectsData";
 import { ExternalLink, Github, ChevronDown, ChevronUp } from "lucide-react";
 import { BulletPoint } from "@/components/BulletPoint";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 export default function ProjectsPage() {
   const [activeProjectId, setActiveProjectId] = useState(projects[0]?.id);
@@ -13,7 +14,14 @@ export default function ProjectsPage() {
   );
 
   return (
-    <section id="projects" className="min-h-screen bg-black text-white">
+    <>
+      <SEO 
+        title="Projects - Taufique Ali | React, Node.js, MERN Stack Projects"
+        description="Explore my portfolio of full-stack projects built with React.js, Next.js, Node.js, MongoDB, Express.js, TypeScript. Real-world applications including LIMS, healthcare systems, and enterprise solutions."
+        keywords="react projects, nodejs projects, mern stack projects, full stack projects, javascript projects, typescript projects, nextjs projects, mongodb projects, rest api projects, web development portfolio, software developer projects"
+        canonical="https://taufiqueali.dev1.com/projects"
+      />
+      <section id="projects" className="min-h-screen bg-black text-white">
       <div className="mx-auto max-w-6xl px-4 py-16">
         {/* Header */}
         <div className="mb-12">
@@ -54,6 +62,7 @@ export default function ProjectsPage() {
         <ProjectViewer project={activeProject} />
       </div>
     </section>
+    </>
   );
 }
 

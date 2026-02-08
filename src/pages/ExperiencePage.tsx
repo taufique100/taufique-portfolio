@@ -1,7 +1,8 @@
 import React, { useMemo, useState } from "react";
-import { experiences, type Experience } from "@/data/experienceData"; // adjust path
+import { experiences, type Experience } from "@/data/experienceData";
 import { Briefcase } from "lucide-react";
 import { BulletPoint } from "@/components/BulletPoint";
+import SEO from "@/components/SEO";
 
 export default function ExperiencePage() {
   const [activeId, setActiveId] = useState(experiences[0]?.id);
@@ -12,7 +13,14 @@ export default function ExperiencePage() {
   );
 
   return (
-    <section id="experience" className="min-h-screen bg-black text-white">
+    <>
+      <SEO 
+        title="Experience - Taufique Ali | Software Developer Work History"
+        description="2+ years of professional experience as Full Stack Developer at ItDose Infosystem and Speqto Technologies. Expertise in React.js, Node.js, TypeScript, MongoDB, REST APIs, and enterprise application development."
+        keywords="software developer experience, full stack developer work history, react developer experience, nodejs developer experience, mern stack experience, professional developer portfolio"
+        canonical="https://taufiqueali.dev1.com/experience"
+      />
+      <section id="experience" className="min-h-screen bg-black text-white">
       <div className="mx-auto max-w-6xl px-4 py-16">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
@@ -132,5 +140,6 @@ export default function ExperiencePage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

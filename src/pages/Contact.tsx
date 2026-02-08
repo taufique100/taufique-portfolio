@@ -1,8 +1,16 @@
 import { Mail, Linkedin, Github, Send } from "lucide-react";
+import SEO from "@/components/SEO";
 
 export default function Contact() {
   return (
-    <section
+    <>
+      <SEO 
+        title="Contact - Taufique Ali | Hire Full Stack Developer"
+        description="Get in touch with Taufique Ali for full-stack development opportunities, freelance projects, or collaborations. Available for React.js, Node.js, and MERN stack projects."
+        keywords="hire full stack developer, hire react developer, hire nodejs developer, contact software developer, freelance web developer, mern stack developer for hire"
+        canonical="https://taufiqueali.dev1.com/contact"
+      />
+      <section
       id="contact"
       className="min-h-screen bg-black text-white flex items-center"
     >
@@ -119,5 +127,6 @@ export default function Contact() {
         </div>
       </div>
     </section>
+    </>
   );
 }
