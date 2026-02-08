@@ -41,10 +41,10 @@ export default function Header() {
     <header className="w-full flex justify-start pt-8 lg:mb-2 sm:mb-4">
       <nav className="relative w-full max-w-xl">
         {/* Top pill */}
-        <div className="flex items-center justify-between rounded-2xl bg-[#1b1b1b] px-4 py-2 shadow-lg ring-1 ring-white/10">
+        <div className="flex items-center justify-between rounded-2xl bg-[#1b1b1b] px-4 py-2 shadow-lg ring-1 ring-white/15">
           {/* Left: Avatar + Name */}
           <Link to="/" className="flex items-center gap-3 min-w-0">
-            <div className="h-10 w-10 rounded-full bg-white/10 ring-2 ring-white/10 flex items-center justify-center text-white text-sm font-semibold">
+            <div className="h-10 w-10 rounded-full bg-white/10 ring-2 ring-white/15 flex items-center justify-center text-white text-sm font-semibold">
               {/* {initials} */}
               <img src={TaufiqueAliAvatar} className="rounded-3xl w-full h-full" alt="Taufique Ali Avatar" />
             </div>
