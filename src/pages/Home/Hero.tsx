@@ -1,13 +1,15 @@
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import TaufiqueAli from "../../assets/TaufiqueAliProfileImage.jpeg";
 import { Link } from "react-router-dom";
 import { Download } from "lucide-react";
+import resume from "@/assets/Taufique Ali_Resume.pdf";
 
 export default function Hero() {
+  
+  const handleDownload = () => {
+    window.open(resume, "_blank");
+  };
+
   return (
     <section className="bg-black text-white">
       <div className="mx-auto max-w-6xl sm:px-2 py-12 sm:py-16">
@@ -28,7 +30,10 @@ export default function Hero() {
               in mind.
             </p>
 
-            <button className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/20 border border-cyan-400/40 px-5 py-3 mt-6 text-sm font-medium text-cyan-200 hover:bg-cyan-500/30 transition shadow-lg shadow-cyan-500/20">
+            <button
+              onClick={handleDownload}
+              className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/20 border border-cyan-400/40 px-5 py-3 mt-6 text-sm font-medium text-cyan-200 hover:bg-cyan-500/30 transition shadow-lg shadow-cyan-500/20"
+            >
               <Download size={18} />
               Download Resume
             </button>
