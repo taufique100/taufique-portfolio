@@ -5,7 +5,7 @@ import {
 } from "react-icons/fa";
 import TaufiqueAli from "../../assets/TaufiqueAliProfileImage.jpeg";
 import { Link } from "react-router-dom";
-import { FileTypeIcon } from "lucide-react";
+import { Download } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -28,10 +28,10 @@ export default function Hero() {
               in mind.
             </p>
 
-            <span className="inline-flex items-center gap-1 rounded-md  bg-rose-500/15 px-2 py-2 mt-3 text-xs font-semibold text-rose-400  border border-rose-400/30">
-              <FileTypeIcon fontSize={16} />
+            <button className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/20 border border-cyan-400/40 px-5 py-3 mt-6 text-sm font-medium text-cyan-200 hover:bg-cyan-500/30 transition shadow-lg shadow-cyan-500/20">
+              <Download size={18} />
               Download Resume
-            </span>
+            </button>
           </div>
 
           {/* Right */}

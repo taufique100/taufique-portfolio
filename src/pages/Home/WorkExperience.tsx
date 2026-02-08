@@ -78,7 +78,7 @@ export default function WorkExperience() {
         <div className="mx-auto max-w-6xl sm:px-2 pb-14 pt-6">
           <h2 className="text-4xl font-bold tracking-tight">Work Experience</h2>
           <p className="mt-3 text-white/60">
-            I switch a lot of companies. It&apos;s mostly about the culture.
+            Building scalable solutions across healthcare, fintech, blockchain, and enterprise systems.
           </p>
 
           <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-12">

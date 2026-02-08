@@ -1,6 +1,7 @@
 import { FaYoutube, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import TaufiqueAliAvatar from "@/assets/TaufiqueAliProfileImage.jpeg";
 import { Link } from "react-router-dom";
+import code360 from '@/assets/code360.svg'
 
 export default function Footer() {
   return (
@@ -32,9 +33,9 @@ export default function Footer() {
             <Link to="/projects" className="hover:text-white transition">
               Projects
             </Link>
-            <Link to="/certifications" className="hover:text-white transition">
+            {/* <Link to="#certifications" className="hover:text-white transition">
               Certifications
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Social icons */}
@@ -77,6 +78,15 @@ export default function Footer() {
               className="hover:text-white transition"
             >
               <FaGithub size={18} />
+            </a>
+            <a
+              href="https://www.naukri.com/code360/profile/TaufiqueAli"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="code360"
+              className="hover:text-white transition"
+            >
+              <img height={40} width={60} src={code360} alt="code360" />
             </a>
           </div>
 
