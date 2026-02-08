@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           {/* Left */}
           <div>
-            <h1 className="text-2xl sm:text-5xl font-bold tracking-tight leading-[1.05]">
+            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight leading-[1.05]">
               Trust me, I'm a <span className="text-cyan-400">Software</span>{" "}
               <span className="text-cyan-400">Engineer.</span>
             </h1>

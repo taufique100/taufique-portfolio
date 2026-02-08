@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import ProjectsPage from './pages/ProjectsPage'
 import AboutPage from './pages/AboutPage'
 import ExperiencePage from './pages/ExperiencePage'
+import NotFound from './pages/NotFound'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
         <Route path='/projects' element={<ProjectsPage/>}/>
         <Route path='/about-me' element={<AboutPage/>}/>
         <Route path='/experience' element={<ExperiencePage/>}/>
-        <Route path="*" element={"404 Not Found"} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   )
