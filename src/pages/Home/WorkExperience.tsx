@@ -74,7 +74,7 @@ export default function WorkExperience() {
           — Inspired by Anders Hejlsberg
         </span>
       </div>
-      <section id="experience" className="w-full bg-black text-white">
+      <section id="experience" className="w-full bg-black text-white pt-6">
         <div className="mx-auto max-w-6xl sm:px-2 pb-14 pt-6">
           <h2 className="text-4xl font-bold tracking-tight">Work Experience</h2>
           <p className="mt-3 text-white/60">

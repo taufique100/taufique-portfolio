@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import TaufiqueAliAvatar from '@/assets/TaufiqueAliAvatar.jpg'
+import TaufiqueAliAvatar from '@/assets/TaufiqueAliProfileImage.jpeg'
 import { Link } from "react-router-dom";
 
 type NavItem = {

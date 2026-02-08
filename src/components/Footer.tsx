@@ -1,5 +1,6 @@
 import { FaYoutube, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-import TaufiqueAliAvatar from "@/assets/TaufiqueAliAvatar.jpg";
+import TaufiqueAliAvatar from "@/assets/TaufiqueAliProfileImage.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -22,18 +23,18 @@ export default function Footer() {
 
           {/* Navigation */}
           <nav className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white/80">
-            <a href="#about" className="hover:text-white transition">
+            <Link to="/about-me" className="hover:text-white transition">
               About
-            </a>
-            <a href="#experience" className="hover:text-white transition">
+            </Link>
+            <Link to="/experience" className="hover:text-white transition">
               Experience
-            </a>
-            <a href="#projects" className="hover:text-white transition">
+            </Link>
+            <Link to="/projects" className="hover:text-white transition">
               Projects
-            </a>
-            <a href="#certifications" className="hover:text-white transition">
+            </Link>
+            <Link to="/certifications" className="hover:text-white transition">
               Certifications
-            </a>
+            </Link>
           </nav>
 
           {/* Social icons */}

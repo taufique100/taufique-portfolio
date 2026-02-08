@@ -5,14 +5,14 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
-import TaufiqueAli from "../../assets/TaufiqueAliAvatar.jpg";
+import TaufiqueAli from "../../assets/TaufiqueAliProfileImage.jpeg";
 import { Link } from "react-router-dom";
 import { FileTypeIcon } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="bg-black text-white">
-      <div className="mx-auto max-w-6xl sm:px-2 py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl sm:px-2 py-12 sm:py-16">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           {/* Left */}
           <div>
@@ -38,23 +38,23 @@ export default function Hero() {
 
           {/* Right */}
           <div className="flex flex-col items-center lg:items-end">
-            <div className="w-full max-w-md sm:max-w-lg overflow-hidden rounded-3xl ring-1 ring-white/10 shadow-2xl">
+            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5">
               <img
                 src={TaufiqueAli}
-                alt="Profile Image"
-                className="h-[250px] sm:h-[350px] w-full object-cover"
+                alt="Taufique Ali"
+                className="h-[350px] w-full object-cover"
               />
             </div>
 
             {/* Social icons */}
-            <div className="mt-6 flex items-center gap-6 mx-auto text-white/60">
-              <Link
+            <div className="mt-6 flex items-center justify-end gap-6 mx-auto text-white/60">
+              {/* <Link
                 className="hover:text-white transition"
                 to="https://www.youtube.com/@taufiqueali7592"
                 aria-label="YouTube"
               >
                 <FaYoutube />
-              </Link>
+              </Link> */}
               <Link
                 className="hover:text-white transition"
                 to="https://x.com/Taufiqu98910345"

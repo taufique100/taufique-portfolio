@@ -1,6 +1,6 @@
 import { MapPin, Briefcase, Code2 } from "lucide-react";
 import { BulletPoint } from "@/components/BulletPoint";
-import TaufiqueAliAvatar from '@/assets/TaufiqueAliAvatar.jpg'
+import TaufiqueAliAvatar from '@/assets/TaufiqueAliProfileImage.jpeg'
 import SEO from "@/components/SEO";
 
 export default function AboutPage() {
